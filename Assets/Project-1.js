@@ -1,9 +1,5 @@
 var Veggie = document.getElementsByClassName("Veggie Meals");
 
-Veggie.addEventListener("click", function()){
-
-}
-
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
