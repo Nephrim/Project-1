@@ -1,3 +1,25 @@
+const myInitCallback = function() {
+    if (document.readyState == 'complete') {
+      google.search.cse.element.render(
+          {
+            div: "test",
+            tag: 'search'
+           });
+    } else {
+      google.setOnLoadCallback(function() {
+          google.search.cse.element.render(
+              {
+                div: "test",
+                tag: 'search'
+              });
+      }, true);
+    }
+  };
+  window.__gcse = {
+    parsetags: 'explicit',
+    initializationCallback: myInitCallback
+  };
+
 var emailInput = document.querySelector("#email");
 var passwordInput = document.querySelector("#password");
 var signUpButton = document.querySelector("#sign-up");
