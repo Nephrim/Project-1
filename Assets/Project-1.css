@@ -1,5 +1,6 @@
 body {
   margin: none;
+  background-image: linear-gradient(grey, rgb(139, 139, 190));
 }
 .Veggie-Taco-Bowl {
   width: 300px;
