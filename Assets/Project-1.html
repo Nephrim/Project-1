@@ -22,56 +22,24 @@
     <section class="content"><p></p></section>
   </div>
 
-  <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn">Veggie Meals</button>
-    <div id="myDropdown" class="dropdown-content">
-      <a href="#">Veggie Meals</a>
-    </div>
-  </div>
-
-  <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn">Keto Meals</button>
-    <div id="myDropdown" class="dropdown-content">
-      <a href="#">Veggie Meals</a>
-    </div>
-  </div>
-
-  <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn">DASH Meals</button>
-    <div id="myDropdown" class="dropdown-content">
-      <a href="#">Veggie Meals</a>
-    </div>
-  </div>
-
-  <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn">Paleo Meals</button>
-    <div id="myDropdown" class="dropdown-content">
-      <a href="#">Veggie Meals</a>
-    </div>
-  </div>
-
-  <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn">Mediterranean Meals</button>
-    <div id="myDropdown" class="dropdown-content">
-      <a href="#">Veggie Meals</a>
-    </div>
-  </div>
-
-  <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn">High Protien Meals</button>
-    <div id="myDropdown" class="dropdown-content">
-      <a href="#">Veggie Meals</a>
-    </div>
-  </div>
-
   <body>
-    <h1>J. KHS Meal Assistant</h1>
+    <h1>K.J.H.S Meal Assistant</h1>
     <p>An intutive program used to make your meal planning easier!</p>
 
-    <section>
+    <div class="card">
+      <h3 class="card-header text-uppercase">Search Food Database</h3>
+      <form id="user-form" class="card-body">
+        <label class="form-label" for="username">Foods</label>
+        <input name="username" id="username" type="text" autofocus="true" class="form-input" />
+        <button type="submit" class="btn">Get </button>
+      </form>
+    </div>
+
+    <section id="Veggie">
       <h2>Veggie meals</h2>
     </section>
-      <div class="Container">
+
+      <div class= "container">
         <section id="Veggie-Taco-Bowl">
         <h4>Veggie Taco Bowl</h4>
         <img
@@ -79,25 +47,26 @@
           src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4565000.jpg"
           alt="Veggie Taco Bowl"
         />
-      </section>
-      <section id="Harvest-Sweet-Potato">
+        </section>
+        <section id="Harvest-Sweet-Potato">
         <h4>Harvest Sweet Potato and Lentil Bowl</h4>
         <img
           class="Harvest-Sweet-Potato"
           src="https://data.thefeedfeed.com/static/2020/08/12/15972430185f33fe8a2ac6b.jpg"
           alt="Harvest Sweet Potato and Lentil Bowl"
         />
-      </section>
-      <section id="Veggie-and-Tofu-Rice-with-Chimichurri">
+        </section>
+        <section id="Veggie-and-Tofu-Rice-with-Chimichurri">
         <h4>Veggie and Tofu Rice with Chimichurri</h4>
         <img
           class="Veggie-and-Tofu-Rice-with-Chimichurri"
           src="https://scm-assets.constant.co/scm/unilever/e9dc924f238fa6cc29465942875fe8f0/732c5020-bdd9-49f6-a075-95c7d6ea574d.jpg"
           alt="Veggie and Tofu Rice with Chimichurri"
         />
-      </section>
+        </section>
       </div>
-    </section>
+    
+
 
     <section>
       <div class="Keto">
@@ -218,7 +187,31 @@
         />
       </div>
     </section>
+    
+    <div class="clearfix">
+      <div class="card">
+        <h2>Sign Up Now To Stay Updated on New Recipes</h2>
+        <form method="POST">
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email"/>
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password"/>
+          </div>
+          <div id="msg"></div>
+          <button id="sign-up">Sign Up</button>
+        </form>
+      </div>
+      <div class="card">
+        <h2>Last Registered User:</h2>
+        <p><strong>Email:</strong> <span id="user-email"></span></p>
+        <p><strong>Password:</strong> <span id="user-password"></span></p>
+      </div>
+    </div>
 
-    <ul></ul>
+    <script src="Project-1.js"></script>
+
   </body>
 </html>
