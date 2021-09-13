@@ -1,6 +1,4 @@
-![Project 1](https://user-images.githubusercontent.com/87549270/133068721-3417d4e2-a4b5-4fab-ae7a-630808b841e5.PNG)
-![project 1 2](https://user-images.githubusercontent.com/87549270/133068730-15b02cf5-7eac-4297-82dd-2dc06a6eb209.PNG)
-![project 1 3](https://user-images.githubusercontent.com/87549270/133068737-aa46e430-0758-4633-87e1-46cba8f7faac.PNG)
+
 # Project-1
 
 # Table of contents
@@ -31,4 +29,4 @@ Diet culture is very prevalent in the US, we decided to make a website that woul
  
  
  # Site Deployed at:
- 
+ https://nephrim.github.io/Project-1/
